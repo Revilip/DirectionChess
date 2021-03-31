@@ -17,11 +17,20 @@ void DirChess::Init()
 
 bool DirChess::Move(int x0,int y0,int x,int y)
 {
+	if(c.side!=side)
+	{
+		return false;
+	}
+	//Add checking code
 	return false;	
 }
 
 bool DirChess::Rotate(int x0,int y0,int dir)
 {
+	if(y0!=3)
+		return false;
+	if(x0!=0&&x0!=4)
+		return false;
 	return false;
 }
 
@@ -38,4 +47,9 @@ int DirChess::Side()
 int DirChess::Win()
 {
 	return DIRCHESS_SIDE_DI;
+}
+
+DirStone DirChess::Get(int x,int y)
+{
+
 }

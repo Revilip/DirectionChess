@@ -33,6 +33,7 @@ public:
 	bool Check();//Check if the player should rotate
 	int Side();//Return the side of the current player
 	int Win();//Return the winning side
+	DirStone Get(int,int);
 private:
 	DirStone chess[35];
 	int side=DIRCHESS_SIDE_DI;
