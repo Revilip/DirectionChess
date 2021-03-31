@@ -36,7 +36,7 @@ public:
 	DirStone Get(int,int);
 private:
 	DirStone chess[35];
-	int side=DIRCHESS_SIDE_DI;
+	int side;
 };
 
 #endif

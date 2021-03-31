@@ -1,0 +1,8 @@
+#add_executable(serverlinux server_linux.cpp)
+#add_executable(clientlinux client_linux.cpp)
+add_executable(clientwin client_windows.cpp)
+include_directories(../include)
+aux_source_directory(../src SRC_LIST)
+#add_executable(serverlinux ${SRC_LIST})
+#add_executable(clientlinux ${SRC_LIST})
+add_executable(clientwin ${SRC_LIST})
